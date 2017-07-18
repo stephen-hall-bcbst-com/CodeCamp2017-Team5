@@ -20,7 +20,7 @@ module.exports = {
         }
 
         if (lc.includes('favorite') && lc.includes('color')) {
-            response = "Any color that you don't like."
+            response = "Any color that you don't like.";
         }
         // *********************************************************************
 
