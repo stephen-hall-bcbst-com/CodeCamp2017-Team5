@@ -23,7 +23,9 @@ module.exports = {
             response = "Any color that you don't like.";
         }
 
-        
+        if (lc.includes)
+
+
         // *********************************************************************
 
         Slack.postMessageToChannel(channelName, response);
