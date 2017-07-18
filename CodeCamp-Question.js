@@ -18,6 +18,10 @@ module.exports = {
         if (lc.includes('weather') && lc.includes('what')) {
             response = "I don't know. Why don't you try going outside and try checking?";
         }
+
+        if (lc.includes('favorite') && lc.includes('color')) {
+            response = "Any color that you don't like."
+        }
         // *********************************************************************
 
         Slack.postMessageToChannel(channelName, response);
