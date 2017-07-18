@@ -9,7 +9,7 @@ module.exports = {
     question_received: function(question, channelName, userName, Slack) {
         // *********************************************************************
        var lc = question.toLowerCase();
-       var response = 'Well.....';
+       var response = 'well..';
 
         if (lc.includes('when') && lc.includes('your') && lc.includes('birthday')) {
         response = "Why do you care? You're not invited to my birthday party anyway.";
