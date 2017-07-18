@@ -16,7 +16,7 @@ module.exports = {
         }
         
         if (lc.includes('weather') && lc.includes('what')) {
-            response = "I don't know. Why don't you try going outside and checking?";
+            response = "I don't know. Why don't you try going outside and try checking?";
         }
         // *********************************************************************
 
