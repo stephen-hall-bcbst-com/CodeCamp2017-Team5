@@ -3,7 +3,7 @@
 module.exports = {
     settings: {
         enabled: true,
-        timeoutInSeconds: 15,
+        timeoutInSeconds: 50,
     },
 
     /**
@@ -15,7 +15,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
 
-        Slack.postMessageToChannel(channel, 'Hurry!!! I AM WAITINGGG! HELLOOO!');
+        Slack.postMessageToChannel(channel, 'Can you respond? Or are you too stupid to do that.');
 
         // *********************************************************************
         // STOP CODING!

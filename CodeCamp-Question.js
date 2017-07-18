@@ -22,6 +22,8 @@ module.exports = {
         if (lc.includes('favorite') && lc.includes('color')) {
             response = "Any color that you don't like.";
         }
+
+        
         // *********************************************************************
 
         Slack.postMessageToChannel(channelName, response);
