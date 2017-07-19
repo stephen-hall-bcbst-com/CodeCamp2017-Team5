@@ -15,7 +15,7 @@ module.exports = {
         var lc = message.toLowerCase();
         var helper = require('./helpers');
         var activities = ['color a picture', 'jogging', 'read a book', '30 minute rest', 'watch TV', 'play videos games', 'go over homework', 'go over fire escape plan']
-        var jokes = ['What do you call a ']
+        var jokes = ['What do you call a container of ducks?... a box of quackers', 'What do you get when you cross a snowman and a vampire?... frostbite', 'what kind of soda do dogs drink?... Dr. Pupper', 'what do you call a cow with no legs?... ground beef', 'Why do seagulls fly over the sea?... because if they flew over the bay they would be bagels']
 
         if (lc.includes('hi') || lc.includes('hey')) {
             Slack.postMessageToChannel(channelName, 'Hi there buttercup'); 
@@ -32,7 +32,11 @@ module.exports = {
         } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
             Slack.postMessageToChannel(channelName, 'ill call 911');
         } else if (lc.includes('joke') || lc.includes('funny')) {
+<<<<<<< HEAD
             Slack.postMessageToChannel(channelName, '');
+=======
+            Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
+>>>>>>> 42476e8f9c393199017d94d245040360f12a07d1
         
         
       
