@@ -12,22 +12,20 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = 'well..';
 
-// Questions will be runned through 
-    if (lc.includes('favorite')) {
-          checktext(lc);
-           
+// 
+if (lc.includes('favorite')) {
+    checktext(lc);
+
         function checktext(text) {
-            switch (text) {
-               case 'food': 
-                    response = 'Strawberry Pie';
-                    break;
-               case 'color':
-                    Slack.postMessageToChannel(channelName, 'Green');
-                    break;
-            }
+            if (text.includes('food')) {
+                 response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and mah cats to visit ya!";
         }
-        
-        
+            if (text.includes('color')) {
+                 response = 'Magenta, of course! I have the cutest magenta hat for mah kitty-kins.';
+        }      
+    }
+}
+     
 
         // *********************************************************************
 
