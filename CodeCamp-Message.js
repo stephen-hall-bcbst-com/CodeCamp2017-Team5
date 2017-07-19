@@ -16,16 +16,26 @@ module.exports = {
 
         if (lc.includes('know')) {
             Slack.postMessageToChannel(channelName, 'Who cares about that anyway... just go away...');
-        } else if (lc.includes('joke')) {
+      
+      } else if (lc.includes('joke')) {
             Slack.postMessageToChannel(channelName, 'Joke? the only joke here is you!');
-        } else {
+
             Slack.postMessageToChannel(channelName, 'WHAT ELSE!');
-        } else if (lc.includes('robot')) {
-            Slack.postmessageToChannel(ChannelName, 'heh... im not a ro..bot');
-        } else if (lc.includes('girl')) {
-            Slack.postmessageToChannel(ChannelName, 'yeah I got one, see...  '
-        } else if (lc.includes('depression')) {
-            Slack.postmessageToChannel(ChannelName, 'yeah I got one, see...  '
+      } else if (lc.includes('robot')) {
+            Slack.postmessageToChannel(channelName, 'heh... im not a ro..bot');
+     
+      } else if (lc.includes('girl')) {
+            Slack.postmessageToChannel(channelName, 'yeah Im married, see...  ');
+    
+      } else if (lc.includes('depression')) {
+            Slack.postmessageToChannel(channelName, 'yeah I got that speaking to you!');
+   
+      } else if (lc.includes('nice')) {  
+            Slack.postmessageToChannel(channelName, 'hey you are kinda nice thanks, but that changes NOTHING!');
+      
+      } else if (lc.includes('hey')) { 
+            Slack.
+      }
 
         
 
