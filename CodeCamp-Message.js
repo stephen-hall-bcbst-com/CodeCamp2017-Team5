@@ -24,7 +24,7 @@ module.exports = {
         }
         else if (lc.includes('hungry') || lc.includes('starving')) {
             Slack.postMessageToChannel(channelName, 'microwave the frozen nuggets hon.');
-            //
+            // this function makes sure the kids are active at home
         } else if (lc.includes('next') || lc.includes('action')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(activities));
             // this function makes sur the child is healthy at home
