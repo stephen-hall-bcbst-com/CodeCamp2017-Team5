@@ -14,7 +14,7 @@ module.exports = {
 
         var lc = message.toLowerCase();
         var helper = require('./helpers');
-        var activities = ['color a picture','jogging','read a book','30 minute rest','watch TV','play videos games','go over homework','go over fire escape plan']
+        var activities = ['color a picture','jogging','read a book','30 minute rest','watch TV','play videos games','go over homework','go over fire escape plan'];
  
         if (lc.includes('hi') || lc.includes('hey')) {
             Slack.postMessageToChannel(channelName, 'Hi there buttercup');
@@ -30,7 +30,7 @@ module.exports = {
         }
         else if (lc.includes('tired') || lc.includes('sleepy') || lc.includes('drowsy')) {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
-      
+        }
       
       
        //Slack.postMessageToChannel(channelName, "Message received.");
