@@ -13,7 +13,6 @@ module.exports = {
         // *********************************************************************
 var lc = message.toLowerCase();
         
-<<<<<<< HEAD
 if (lc.includes('')) {
     Slack.postMessageToChannel(channelName, '');
 } else {
@@ -21,14 +20,6 @@ if (lc.includes('')) {
 }
 if (lc.includes('')) {
     Slack.postMessageToChannel(channelName, '');
-=======
-if (lc.includes()) {
-    Slack.postMessageToChannel(channelName, 
-} else {
-    Slack.postMessageToChannel(channelName,
-if (lc.includes()) {
-    Slack.postMessageToChannel(channelName,
->>>>>>> e3333c8425d548053f62a1a61e1208f457f01a79
     }
 
 
