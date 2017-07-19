@@ -13,11 +13,11 @@ module.exports = {
         // *********************************************************************
 var lc = message.toLowerCase();
         
-if (lc.includes('homework')) {
+if (lc.includes()) {
     Slack.postMessageToChannel(channelName, 
 } else {
     Slack.postMessageToChannel(channelName,
-if (lc.includes('dumb')) {
+if (lc.includes()) {
     Slack.postMessageToChannel(channelName,
     }
 
