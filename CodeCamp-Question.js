@@ -22,17 +22,12 @@ module.exports = {
             response = "I don't know. Why don't you try going outside and try checking?";
     }
 
-// Response when questioned about favorite color.
-        if (lc.includes('favorite') && lc.includes('color')) {
-            response = "Any color that you don't like.";
-    }
-
 // Response when questioned about mean behavior.
         if (lc.includes('why') && lc.includes('you') && lc.includes('mean')) {
             response = "Well, I have to be around you all day.";
     }
 
-// Response when questioned about favorite things
+// Questions will be runned through 
     if (lc.includes('favorite')) {
         checkforworld1(lc);
     }
