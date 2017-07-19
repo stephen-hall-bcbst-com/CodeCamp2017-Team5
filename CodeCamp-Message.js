@@ -14,12 +14,10 @@ module.exports = {
 
         var lc = message.toLowerCase();
 
-        if (lc.includes('know')) {
+      }  if (lc.includes('know')) {
             Slack.postMessageToChannel(channelName, 'Who cares about that anyway... just go away...');
       } else if (lc.includes('joke')) {
             Slack.postMessageToChannel(channelName, 'Joke? the only joke here is you!');
-
-            Slack.postMessageToChannel(channelName, 'WHAT ELSE!');
       } else if (lc.includes('robot')) {
             Slack.postmessageToChannel(channelName, 'Heh... im not a ro..bot');
       } else if (lc.includes('girl')) {
