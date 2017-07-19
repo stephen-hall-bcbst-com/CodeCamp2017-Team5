@@ -42,16 +42,22 @@ if (lc.includes('favorite')) {
 
 // Sends a messsage when asked "How are you?"
  if (lc.includes('how are you')) {
-     response = "I'm doin' fine!";
+    response = "I'm doin' fine!";
  }
 >>>>>>> e3333c8425d548053f62a1a61e1208f457f01a79
 
 // Suffles through 3 responses to send when asked "What you doing?"
-if (lc.includes('what') && lc.includes('you') && lc.includes('doing')) {
-    Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
+if (lc.includes('what') && lc.includes('you') && lc.includes('doing'));
+    {Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
  }
+<<<<<<< HEAD
 
+// 
+if (lc.includes('+') || lc.includes('plus') ||
+
+=======
         
+>>>>>>> d58271b6ede6a66fe463868b8e1f1ec4481ef4c9
         
         
         // *********************************************************************
