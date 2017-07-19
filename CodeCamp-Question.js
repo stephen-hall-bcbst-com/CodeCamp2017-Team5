@@ -36,7 +36,7 @@ module.exports = {
         function checkforworld1(text) {
             switch (text) {
                case 'food': 
-                    Slack.postMessageToChannel(channelName, 'Strawberry Pie');
+                    response = 'Strawberry Pie';
                     break;
                case 'color':
                     Slack.postMessageToChannel(channelName, 'Green');
