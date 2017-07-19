@@ -12,39 +12,20 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = 'well..';
 
-// Response when questioned about birthday.
-        if (lc.includes('when') && lc.includes('your') && lc.includes('birthday')) {
-        response = "Why do you care? You're not invited to my birthday party anyway.";
-    }
-    
-// Response when questioned about weather.
-        if (lc.includes('weather') && lc.includes('what')) {
-            response = "I don't know. Why don't you try going outside and try checking?";
-    }
+// 
+if (lc.includes('favorite')) {
+    checktext(lc);
 
-// Response when questioned about mean behavior.
-        if (lc.includes('why') && lc.includes('you') && lc.includes('mean')) {
-            response = "Well, I have to be around you all day.";
-    }
-
-// Questions will be runned through 
-    if (lc.includes('favorite')) {
-        checkforworld1(lc);
-    }
-
-        
-        function checkforworld1(text) {
-            switch (text) {
-               case 'food': 
-                    response = 'Strawberry Pie';
-                    break;
-               case 'color':
-                    Slack.postMessageToChannel(channelName, 'Green');
-                    break;
-            }
+        function checktext(text) {
+            if (text.includes('food')) {
+                 response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and mah cats to visit ya!";
         }
-        
-        
+            if (text.includes('color')) {
+                 response = 'Magenta, of course! I have the cutest magenta hat for mah kitty-kins.';
+        }      
+    }
+}
+     
 
         // *********************************************************************
 
