@@ -15,7 +15,7 @@ module.exports = {
             
         if (lc.includes('homework')) {
         Slack.postMessageToChannel(channelName, 'Ok what are you working on ?');
-        } else {
+      
         Slack.postMessageToChannel(channelName, 'What can i do for you.');
         }
         if (lc.includes('hurt')) {
