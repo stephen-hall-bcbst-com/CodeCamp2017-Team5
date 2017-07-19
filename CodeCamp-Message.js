@@ -15,7 +15,8 @@ module.exports = {
         var lc = message.toLowerCase();
         var helper = require('./helpers');
         var activities = ['color a picture', 'jogging', 'read a book', '30 minute rest', 'watch TV', 'play videos games', 'go over homework', 'go over fire escape plan']
- 
+        var jokes = ['What do you call a ']
+
         if (lc.includes('hi') || lc.includes('hey')) {
             Slack.postMessageToChannel(channelName, 'Hi there buttercup'); 
         } else if (lc.includes('bye') || lc.includes('goodbye')) {
@@ -29,8 +30,11 @@ module.exports = {
         } else if (lc.includes('sick') || lc.includes('hurts')) {
             Slack.postMessageToChannel(channelName, 'how bad does it hurt, take some medicine');
         } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
-            Slack.postMessageToChannel(channelName, 'ill call the hospital');
-        }
+            Slack.postMessageToChannel(channelName, 'ill call 911');
+        } else if (lc.includes('joke') || lc.includes('funny')) {
+            Slack.postMessageToChannel(channelName, '')
+        
+        
       
       
       
