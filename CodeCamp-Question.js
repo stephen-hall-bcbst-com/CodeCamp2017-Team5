@@ -21,7 +21,7 @@ if (lc.includes('favorite')) {
                  response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and mah cats to visit ya!";
         }
             if (text.includes('color')) {
-                 response = 'Magenta, of course! I have the cutest magenta hat for mah kitty-kins.';
+                 response = 'Magenta, of course! I bought the cutest magenta hat last saturday!';
         }      
     }
 }
