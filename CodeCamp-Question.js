@@ -33,18 +33,23 @@ module.exports = {
     }
 
 // Response when questioned about favorite things
-        if (lc.includes('favorite')) {
+    if (lc.includes('favorite')) {
+        checkforworld1(lc);
+    }
+
         
-            switch(text) {
-               case 'food' : 
+        function checkforworld1(text) {
+            switch (text) {
+               case 'food': 
                     Slack.postMessageToChannel(channelName, 'Strawberry Pie');
                     break;
-               case 'color' :
+               case 'color':
                     Slack.postMessageToChannel(channelName, 'Green');
                     break;
+            }
         }
         
-
+        
 
         // *********************************************************************
 
