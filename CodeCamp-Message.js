@@ -14,7 +14,7 @@ module.exports = {
 
         var lc = message.toLowerCase();
         var helper = require('./helpers');
-        var activities = ['color a picture','jogging','read a book','']
+        var activities = ['color a picture','jogging','read a book','30 minute rest','watch TV',]
  
         if (lc.includes('hi') || lc.includes('hey')) {
             Slack.postMessageToChannel(channelName, 'Hi there buttercup');
