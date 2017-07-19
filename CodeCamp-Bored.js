@@ -15,7 +15,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
         var helper = require('./helpers');
-
+        // Response(s) when bot gets bored at a given time (15) seconds
         switch (helper.numberBetweenXandY(1, 4)) {
             case 1: Slack.postMessageToChannel(channel, 'Hurry!!! I AM WAITINGGG! HELLOOO!');
                 break;
@@ -25,8 +25,9 @@ module.exports = {
                 break;
             case 4: Slack.postMessageToChannel(channel, 'TIME is of the ESSENCE, hint hint...!');
                 break;
+            case 5: Slack.postMessageToChannel(channel, '');
         }
-        Slack.postMessageToChannel(channel, 'Hurry!!! I AM WAITINGGG! HELLOOO!');
+        
 
         // *********************************************************************
         // STOP CODING!
