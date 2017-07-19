@@ -26,7 +26,7 @@ module.exports = {
             case 4: Slack.postMessageToChannel(channel, 'TIME is of the ESSENCE, hint hint...!');
                 break;
         }
-        Slack.postMessageToChannel(channel, 'Hurry!!! I AM WAITINGGG! HELLOOO!');
+        
 
         // *********************************************************************
         // STOP CODING!
