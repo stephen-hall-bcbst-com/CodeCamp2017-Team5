@@ -33,8 +33,9 @@ module.exports = {
     }
 
 // Response when questioned about favorite things
-        if (lc.includes('favorite')) {
+    if (lc.includes('favorite'));
         
+        function checkforworld1(text) {
             switch(text) {
                case 'food' : 
                     Slack.postMessageToChannel(channelName, 'Strawberry Pie');
@@ -44,7 +45,7 @@ module.exports = {
                     break;
         }
         
-
+        
 
         // *********************************************************************
 
