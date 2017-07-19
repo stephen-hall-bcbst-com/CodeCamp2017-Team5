@@ -13,13 +13,22 @@ module.exports = {
         // *********************************************************************
 var lc = message.toLowerCase();
         
-if (lc.includes('homework')) {
-    Slack.postMessageToChannel(channelName, 'Why dont you use your notes you got at school instead of asking me.');
+<<<<<<< HEAD
+if (lc.includes('')) {
+    Slack.postMessageToChannel(channelName, '');
 } else {
-    Slack.postMessageToChannel(channelName, 'WHAT DO YOU WANT!!!!! I AM TRYING TO HAVE A GOOD DAY TILL YOU SHOWED UP THANKS FOR RUINING MY DAY!!!!.');
+    Slack.postMessageToChannel(channelName, '');
 }
-if (lc.includes('dumb')) {
-    Slack.postMessageToChannel(channelName, 'Your the dumb one now leave me alone dumbo');
+if (lc.includes('')) {
+    Slack.postMessageToChannel(channelName, '');
+=======
+if (lc.includes()) {
+    Slack.postMessageToChannel(channelName, 
+} else {
+    Slack.postMessageToChannel(channelName,
+if (lc.includes()) {
+    Slack.postMessageToChannel(channelName,
+>>>>>>> e3333c8425d548053f62a1a61e1208f457f01a79
     }
 
 

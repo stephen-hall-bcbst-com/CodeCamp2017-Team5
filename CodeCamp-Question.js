@@ -62,13 +62,17 @@ if (lc.includes('favorite')) {
  }
 
 // Suffles through 3 responses to send when asked "What you doing?"
-if (lc.includes('what') && lc.includes('you') && lc.includes('doing')) {
-    Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
+if (lc.includes('what') && lc.includes('you') && lc.includes('doing'));
+    {Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
  }
+<<<<<<< HEAD
 
 // 
 if (lc.includes('+') || lc.includes('plus') ||
 
+=======
+        
+>>>>>>> d58271b6ede6a66fe463868b8e1f1ec4481ef4c9
         
         
         // *********************************************************************
