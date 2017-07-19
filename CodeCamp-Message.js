@@ -23,10 +23,13 @@ module.exports = {
             Slack.postMessageToChannel(channelName, 'Take care see you later honey');
         } else if (lc.includes('hungry') || lc.includes('starving')) {
             Slack.postMessageToChannel(channelName, 'microwave the frozen nuggets hon.');
+            //
         } else if (lc.includes('next') || lc.includes('action')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(activities));
+            // this function makes sur the child is healthy at home
         } else if (lc.includes('tired') || lc.includes('sleepy') || lc.includes('drowsy')) {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
+            // this function makes sure the child is okay at home
         } else if (lc.includes('sick') || lc.includes('hurts')) {
             Slack.postMessageToChannel(channelName, 'how bad does it hurt, take some medicine');
             // this function makes sure the child is safe at home
