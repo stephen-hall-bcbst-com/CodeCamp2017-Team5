@@ -32,7 +32,7 @@ module.exports = {
         } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
             Slack.postMessageToChannel(channelName, 'ill call 911');
         } else if (lc.includes('joke') || lc.includes('funny')) {
-            Slack.postMessageToChannel(channelName, '')
+            Slack.postMessageToChannel(channelName, '');
         
         
       
