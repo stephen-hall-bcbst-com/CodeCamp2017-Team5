@@ -28,7 +28,7 @@ module.exports = {
         else if (lc.includes('next') || lc.includes('action')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(activities));
         }
-        else if (lc.includes('hungry') || lc.includes('starving')) {
+        else if (lc.includes('tired') || lc.includes('sleepy') || lc.includes('drowsy')) {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
       
       
