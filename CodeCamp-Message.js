@@ -32,11 +32,8 @@ module.exports = {
         } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
             Slack.postMessageToChannel(channelName, 'ill call 911');
         } else if (lc.includes('joke') || lc.includes('funny')) {
-<<<<<<< HEAD
             Slack.postMessageToChannel(channelName, '');
-=======
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
->>>>>>> 42476e8f9c393199017d94d245040360f12a07d1
         
         
       
