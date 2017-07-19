@@ -18,7 +18,7 @@ module.exports = {
             Slack.postMessageToChannel(channelName, 'Who cares about that anyway... just go away...');
       
       } else if (lc.includes('joke')) {
-            Slack.postMessageToChannel(channelName, 'J4oke? the only joke here is you!');
+            Slack.postMessageToChannel(channelName, 'Joke? the only joke here is you!');
 
             Slack.postMessageToChannel(channelName, 'WHAT ELSE!');
       } else if (lc.includes('robot')) {
