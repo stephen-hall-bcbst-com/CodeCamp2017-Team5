@@ -58,7 +58,7 @@ if (lc.includes('favorite')) {
 
 // Sends a messsage when asked "How are you?"
  if (lc.includes('how are you')) {
-     response = "I'm doin' fine!";
+    response = "I'm doin' fine!";
  }
 
 // Suffles through 3 responses to send when asked "What you doing?"
@@ -66,7 +66,9 @@ if (lc.includes('what') && lc.includes('you') && lc.includes('doing')) {
     Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
  }
 
-        
+// 
+if (lc.includes('+') || lc.includes('plus') ||
+
         
         
         // *********************************************************************
