@@ -29,8 +29,10 @@ module.exports = {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
         } else if (lc.includes('sick') || lc.includes('hurts')) {
             Slack.postMessageToChannel(channelName, 'how bad does it hurt, take some medicine');
+            // this function makes sure the child
         } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
             Slack.postMessageToChannel(channelName, 'ill call 911');
+            // this function helps the child/kid be entertained at home
         } else if (lc.includes('joke') || lc.includes('funny')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
         
