@@ -23,6 +23,9 @@ if (lc.includes('favorite')) {
             if (text.includes('color')) {
                  response = 'Magenta, of course! I bought the cutest magenta hat last saturday!';
         }      
+            if (text.includes('animal')) {
+                 response = "Favorite animal? Well, mah cats of course! I love mah furry babies more then I love plum puddin'! ";
+        }
     }
 }
      
