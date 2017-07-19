@@ -14,14 +14,15 @@ module.exports = {
 
         var lc = message.toLowerCase();
         var helper = require('./helpers');
-        var activities = ['color a picture', 'jogging', 'read a book', '30 minute rest', 'watch TV', 'play videos games', 'go over homework', 'go over fire escape plan']
-        var jokes = ['What do you call a container of ducks?... a box of quackers', 'What do you get when you cross a snowman and a vampire?... frostbite', 'what kind of soda do dogs drink?... Dr. Pupper', 'what do you call a cow with no legs?... ground beef', 'Why do seagulls fly over the sea?... because if they flew over the bay they would be bagels']
-
+        var activities = ['color a picture','jogging','read a book','30 minute rest','watch TV','play videos games','go over homework','go over fire escape plan'];
+ 
         if (lc.includes('hi') || lc.includes('hey')) {
-            Slack.postMessageToChannel(channelName, 'Hi there buttercup'); 
-        } else if (lc.includes('bye') || lc.includes('goodbye')) {
+            Slack.postMessageToChannel(channelName, 'Hi there buttercup');
+        }
+         else if (lc.includes('bye') || lc.includes('goodbye')) {
             Slack.postMessageToChannel(channelName, 'Take care see you later honey');
-        } else if (lc.includes('hungry') || lc.includes('starving')) {
+        }
+        else if (lc.includes('hungry') || lc.includes('starving')) {
             Slack.postMessageToChannel(channelName, 'microwave the frozen nuggets hon.');
             //
         } else if (lc.includes('next') || lc.includes('action')) {
@@ -44,10 +45,9 @@ module.exports = {
       
       
       
-         // Slack.postMessageToChannel(channelName, "Message received.");
-         // *********************************************************************
-         // STOP CODING!
-         // *********************************************************************
-    };
-},
+       //Slack.postMessageToChannel(channelName, "Message received.");
+        // *********************************************************************
+        // STOP CODING!
+        // *********************************************************************
+    },
 };

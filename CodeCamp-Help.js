@@ -11,18 +11,16 @@ module.exports = {
         // *********************************************************************
         // CODE HERE!
         // *********************************************************************
-var lc = message.toLowerCase();
-        
-if (lc.includes('')) {
-    Slack.postMessageToChannel(channelName, '');
-} else {
-    Slack.postMessageToChannel(channelName, '');
-}
-if (lc.includes('')) {
-    Slack.postMessageToChannel(channelName, '');
-    }
-
-
+        var lc = message.toLowerCase();
+            
+        if (lc.includes('homework')) {
+        Slack.postMessageToChannel(channelName, 'Ok what are you working on ?');
+      
+        Slack.postMessageToChannel(channelName, 'What can i do for you.');
+        }
+        if (lc.includes('hurt')) {
+        Slack.postMessageToChannel(channelName, 'Do you need a band aid or something ');
+        }
 
         // *********************************************************************
         // STOP CODING!
