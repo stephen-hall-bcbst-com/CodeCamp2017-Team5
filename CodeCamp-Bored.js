@@ -25,7 +25,8 @@ module.exports = {
                 break;
             case 4: Slack.postMessageToChannel(channel, 'TIME is of the ESSENCE, hint hint...!');
                 break;
-            case 5: Slack.postMessageToChannel(channel, '');
+            case 5: Slack.postMessageToChannel(channel, 'Are We Done Here?');
+                break; 
         }
         
 
