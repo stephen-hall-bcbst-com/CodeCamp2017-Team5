@@ -30,7 +30,16 @@ module.exports = {
         }
         else if (lc.includes('tired') || lc.includes('sleepy') || lc.includes('drowsy')) {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
-        }
+        } else if (lc.includes('sick') || lc.includes('hurts')) {
+            Slack.postMessageToChannel(channelName, 'how bad does it hurt, take some medicine');
+        } else if (lc.includes('very bad')|| lc.includes('a lot') || lc.includes('stranger')) {
+            Slack.postMessageToChannel(channelName, 'ill call 911');
+        } else if (lc.includes('joke') || lc.includes('funny')) {
+            Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
+        
+        
+        
+      
       
       
        //Slack.postMessageToChannel(channelName, "Message received.");
