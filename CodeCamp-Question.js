@@ -34,14 +34,16 @@ module.exports = {
 // Sends a messsage when asked "How are you?"
         } else if (lc.includes('how are you')) {
                  response = "I'm doin' fine!";
+// Suffles through a list of responses and sends when asked "What are you doing?"     
         } else if (lc.includes('what') && lc.includes('you') && lc.includes('doing')) {
-            Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
+                 Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
 /* Recognizes math problems through the use of operation words and supplies wrong answers.
 * She's an old lady! Her brain has a lil trouble with doing math.*/
         } else if (lc.includes('+') || lc.includes('plus') || lc.includes('minus') || lc.includes('times') || lc.includes('divided by')) {
-             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(MathPhrases));
+                 Slack.postMessageToChannel(channelName, helper.phraseAtRandom(MathPhrases));
+// If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
-            response = 'well..';
+                 response = "Well.. I'm not sure what you mean, honeybun!";
         }
         Slack.postMessageToChannel(channelName, response);
     }
