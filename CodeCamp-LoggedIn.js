@@ -10,6 +10,8 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
            var helper = require('./helpers');
+           var memory = require('./CodeCamp-Memory');
+           memory.parent =
            var ImBackPhrases = ['what is your parent/guardian name? '];
            {Slack.postMessageToChannel(channel, helper.phraseAtRandom(ImBackPhrases));
         }
