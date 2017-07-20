@@ -12,7 +12,6 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = (response);
        var helper = require('./helpers');
-<<<<<<< HEAD
        var WydPhrases = ["I'm knittin' yah a sweater!", 
                          "I'm readin the Knittin' Catalog!", 
                          "Playin a fun game of Bingo with all mah friends!"];
@@ -36,32 +35,6 @@ module.exports = {
         } else if (lc.includes('drink') && lc.includes('favorite')) {
                  response = "I love me a big ol' jug of pink lemonade! Perfect for days lounging under the sun with mah new magenta hat.";
         } else if (lc.includes('show') && lc.includes('favorite')) {
-=======
-       var memory = require('./CodeCamp-Memory');
-       var WydPhrases = ["I'm knittin' yah a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all mah friends!"];
-       var MathPhrases = ["I believe the answer is 35,785.", "2/7 of course!", "Clearly the answer is 3", "-505. I may be old, but I still got it!", "Is it 65 and 3/8?", "11 billion.", "Uh.. is it 670?", "7 hundred thousand!", "I believe the answer is 33 billion!"];
-
-// Checks if question has to do with Marg's interests
-        if (lc.includes('favorite')) {
-                checktext(lc);
-
-// This sends a response based on what interest is being questioned
- function checktext(text) {
-// sends a message when asked the word food 
-        if (text.includes('food')) {
-        response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and my cats to visit ya!";
-// Sends a message when asked the word color
-        } else if (text.includes('color')) {
-                 response = 'Magenta, of course! I bought the cutest magenta sun hat last saturday! Large and covered in frills with a giant feather on top!';
-// Sends a message when asked the animal         
-        } else if (text.includes('animal')) {
-                 response = "Favorite animal? Well, mah cats of course! I love mah furry babies more then I love plum puddin'! ";
-// Sends a message when asked the word drink
-        } else if (text.includes('drink')) {
-                 response = "I love me a big ol' jug of pink lemonade! Perfect for days lounging under the sun with mah new magenta hat."; 
-// Sends a when asked the word show
-        } else if (text.includes('show')) {
->>>>>>> 9e863a77f423c6792ed535d1d8449f0462097b29
                  response = "Dance Moms! Those ladies keep mah young, with their cracka lackin' and their pop hop!";
         } else if (lc.includes('shape') && lc.includes('favorite')) {
                  response = "Hmm, hearts of course!";
@@ -93,22 +66,8 @@ module.exports = {
         
 // If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
-<<<<<<< HEAD
                  response = "Well.. I'm not sure what you mean, honeybun!";          
         } 
-=======
-                 response = "Well.. I'm not sure what you mean, honeybun!";
-        }   
-    }
-} else if (lc.includes('sick')) {
-        response = memory.wasSomeonesick; 
-}
-     
-Slack.postMessageToChannel(channelName, response);
-
-
-
->>>>>>> 9e863a77f423c6792ed535d1d8449f0462097b29
 
           Slack.postMessageToChannel(channelName, response);
         // *********************************************************************
