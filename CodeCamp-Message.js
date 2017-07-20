@@ -54,7 +54,7 @@ module.exports = {
             helper.writeDataToFile('parent name', memory.parent);
              // this function just simply says hi
         } else if (lc.includes('hi') || lc.includes('hey')) {
-            Slack.postMessageToChannel(channelName, 'Hi there' + memory.child + '.');
+            Slack.postMessageToChannel(channelName, 'Hi there buttercup');
         }
         
       
