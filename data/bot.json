@@ -6,7 +6,7 @@
 	],
 	"killPhrase": "shutdown bot 5",
 	"history": {
-		"lastChannel": ""
+		"lastChannel": "team-5"
 	},
 	"general": {
 		"defaultChannel": "team-5"
