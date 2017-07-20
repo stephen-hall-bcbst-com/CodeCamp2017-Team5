@@ -16,7 +16,7 @@ module.exports = {
         // *********************************************************************
         var helper = require('./helpers');
         // Response(s) when bot gets bored at a given time, (15) seconds
-        switch (helper.numberBetweenXandY(1, 9)) {
+        switch (helper.numberBetweenXandY(1, 6)) {
             case 1: Slack.postMessageToChannel(channel, 'What do you need? Oh, and remember to drink 8, 8 ounce cups of water each day');
                 break;
             case 2: Slack.postMessageToChannel(channel, 'I could be spending this time knitting, you know...');
@@ -37,7 +37,7 @@ module.exports = {
                 break;
             case 10: Slack.postMessageToChannel(channel, 'Closed mouths dont get fed honey...');
         }
-        // Randomly genrates a number between 1 and 10..the number chosen contains a response which will be used at a time of "boredom"
+        
 
         // *********************************************************************
         // STOP CODING!
