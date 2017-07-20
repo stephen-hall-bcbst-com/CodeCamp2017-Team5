@@ -40,9 +40,11 @@ module.exports = {
         } else if (lc.includes('shape') && lc.includes('favorite')) {
                  response = "Hmm, hearts of course!";
         } else if (lc.includes('cereal') && lc.includes('favorite')) {
-                 response = "Rasion Bran! MmMm. Delicous.";
+                 response = "Raisin Bran! MmMm. Delicous.";
         } else if (lc.includes('fruit') && lc.includes('favorite')) {
                  response = "Prunes! Pruney old prunes.";
+        } else if (lc.includes('emoji') && lc.includes('favorite')) {
+                 response = "Emo-ji? What's that? Is that one of them new rock bands? Dreadful music!";
 // Sends a messsage when asked "How are you?"
         } else if (lc.includes('how are you')) {
                  response = "I'm doin' fine!";                    
@@ -59,6 +61,12 @@ module.exports = {
 // Sends a story if Marg is asked to tell a story       
         } else if (lc.includes('tell') && lc.includes('story')) {
                  response = "Well, once, long ago, in a land far, far away, I was engaged to a handsome rich guy, but I was still sad because I hate handsome rich guys. Like, who even likes handsome rich guys, they are the worst. Always so handsome. And rich. SO stupid! So he gave me one fancy necklace. Liver of the Ocean, I believe it was called. So, while I was off crying because I had to be engaged to a stupid handsome, rich guy, I accidentally slipt on a pina coladoa, and fell off the boat, but I was saved, by a handsome poor guy. Name was Jake, I think? So, I became bffs with Jake and left my stupid rich, handsome, fiance for him, but then, suddenly, a giant, handsome squid came out of the ocean and cut the boat I was on with a giant pair of scissors. Everyone was getting onto the lifeboats and sailing away, but I didn't want to do that because lifeboats are lame, so I grabbed a door and yanked Jake into the water with me. So, we were floating away when Jake started complaining that he was getting hypothermia and drowning and other stupid stuff and he asked me to let him onto the door I was currently surfing to victory, but I told him to suck it and stop being such a crybaby. Yeah, my adventures on the Titanic were great.";     
+// Sends message saying who is the coolest person ever                      
+        } else if (lc.includes('who') && lc.includes('coolest') && lc.includes('person')) {
+                 response = "The coolest person in the world is clearly James Dean/Stephen Hall/David Marckel/Teresa Maines/Nick Coussoule! He/She are absoluetly amazing. Wonderful people. I love them!";        
+// Sends a message when Marg is questioned about her birthday     
+        } else if (lc.includes('when') && lc.includes('your') && lc.includes('birthday')) {
+                 response = "The 3rd of november! You know, it would be quite nice if you sent a card for once.";
 // If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
                  response = "Well.. I'm not sure what you mean, honeybun!";          
