@@ -24,9 +24,10 @@ module.exports = {
             'why does mr.lemon act so mean?... because he is not sweet!', 'why cant you play cards cats?... because on could be a cheetah and another could be a lion!',
             'what do you call a cow with two legs?... lean Meat!', '']; 
              // this function just simply says bye 
-        if (lc.includes('hi') || lc.includes('hey')) {
-            Slack.postMessageToChannel(channelName, 'Hi there buttercup');
-            // this function just simply says hi
+        if (lc.includes("child's") || lc.includes("kid's")) {
+            memory.child = helper.getLastWord(message);
+            helper.writeDataToFile('child name', memory.child);
+           
         } else if (lc.includes('bye') || lc.includes('goodbye')) {
             Slack.postMessageToChannel(channelName, 'Take care see you later honey');
             // this function makes sure the child is not hungry at home 
@@ -48,13 +49,13 @@ module.exports = {
             // this function helps the child/kid be entertained at home
         } else if (lc.includes('joke') || lc.includes('funny')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
-        } else if (lc.includes('mom') || lc.includes('dad')) {
-            memory.parent = message;
+        } else if (lc.includes("mom's") || lc.includes("dad's")) {
+            memory.parent = helper.getLastWord(message);
             helper.writeDataToFile('parent name', memory.parent);
-        }  else if (lc.includes('child') || lc.includes('kid')) {
-            memory.child = message;
-            helper.writeDataToFile('child name', memory.child);
-        } 
+             // this function just simply says hi
+        } else if (lc.includes('hi') || lc.includes('hey')) {
+            Slack.postMessageToChannel(channelName, 'Hi there buttercup');
+        }
         
       
       
