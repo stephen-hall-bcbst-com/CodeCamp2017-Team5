@@ -10,7 +10,7 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
            var helper = require('./helpers');
-           var ImBackPhrases = ['Hi there sunny! Just woke up from mah nap.', 'Hi there pumpkin. Just finished feeding mah cats.', 'Hello Buttercup! Back from Bingo with the girls!'];
+           var ImBackPhrases = ['what is your parent/guardian name? '];
            {Slack.postMessageToChannel(channel, helper.phraseAtRandom(ImBackPhrases));
         }
 

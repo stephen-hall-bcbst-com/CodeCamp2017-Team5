@@ -37,7 +37,7 @@ module.exports = {
                 break;
             case 10: Slack.postMessageToChannel(channel, 'Closed mouths do not get fed honey...');
         }
-        
+        // Randomly generates a number with a given response. It then post that message from the attached number to the channel.
 
         // *********************************************************************
         // STOP CODING!
