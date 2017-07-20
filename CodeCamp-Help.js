@@ -20,7 +20,7 @@ module.exports = {
         Slack.postMessageToChannel(channelName, 'Ouch! I would recommend first aid for you.');
         }
         if (lc.includes('aching')) {
-        Slack.postMessageToChannel(channelName, 'Try taking pain relievers or medicine');
+        Slack.postMessageToChannel(channelName, 'Try taking pain relievers or medicine.');
         }
         if (lc.includes('assist')) {
         Slack.postMessageToChannel(channelName, 'I would be glad to help, what do you need?');
