@@ -15,14 +15,14 @@ module.exports = {
         var lc = message.toLowerCase();
         var helper = require('./helpers');
         var activities = ['color a picture','jogging','read a book','30 minute rest','watch TV','play videos games','go over homework','go over fire escape plan'];
- 
+             // this function just simply says bye
         if (lc.includes('hi') || lc.includes('hey')) {
             Slack.postMessageToChannel(channelName, 'Hi there buttercup');
-        }
-         else if (lc.includes('bye') || lc.includes('goodbye')) {
+            // this function just simply says hi
+        } else if (lc.includes('bye') || lc.includes('goodbye')) {
             Slack.postMessageToChannel(channelName, 'Take care see you later honey');
-        }
-        else if (lc.includes('hungry') || lc.includes('starving')) {
+            // this function makes sure the child is not hungry at home 
+        } else if (lc.includes('hungry') || lc.includes('starving')) {
             Slack.postMessageToChannel(channelName, 'microwave the frozen nuggets hon.');
             // this function makes sure the kids are active at home
         } else if (lc.includes('next') || lc.includes('action')) {
@@ -49,5 +49,5 @@ module.exports = {
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
-    },
+    };
 };
