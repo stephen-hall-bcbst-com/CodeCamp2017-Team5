@@ -35,7 +35,7 @@ module.exports = {
                 break;
             case 9: Slack.postMessageToChannel(channel, 'Do you have something in your mouth? Are you not able to talk?');
                 break;
-            case 10: Slack.postMessageToChannel(channel, 'Closed mouths dont get fed honey...');
+            case 10: Slack.postMessageToChannel(channel, 'Closed mouths do not get fed honey...');
         }
         
 
