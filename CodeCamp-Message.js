@@ -51,7 +51,9 @@ module.exports = {
         } else if (lc.includes('mom') || lc.includes('dad')) {
             memory.parent = message;
             helper.writeDataToFile('parent name', memory.parent);
-        }
+        }  else if (lc.includes('child') || lc.includes('kid')) {
+            memory.child = message;
+            helper.writeDataToFile('child name', memory.child);
         
         
       
