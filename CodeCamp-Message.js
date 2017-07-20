@@ -54,7 +54,7 @@ module.exports = {
         }  else if (lc.includes('child') || lc.includes('kid')) {
             memory.child = message;
             helper.writeDataToFile('child name', memory.child);
-        
+        } 
         
       
       
