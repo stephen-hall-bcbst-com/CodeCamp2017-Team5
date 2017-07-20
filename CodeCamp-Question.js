@@ -18,11 +18,8 @@ module.exports = {
 // 
 if (lc.includes('favorite')) {
     checktext(lc);
-<<<<<<< HEAD
 // This sends a response based on what interest is being questioned
-=======
 
->>>>>>> 4df83522aa1a7b14b51c3875fb41b024ebad8d00
         function checktext(text) {
             if (text.includes('food')) {
                  response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and mah cats to visit ya!";
