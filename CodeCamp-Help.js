@@ -13,13 +13,17 @@ module.exports = {
         // *********************************************************************
         var lc = message.toLowerCase();
             
-        if (lc.includes('homework')) {
-        Slack.postMessageToChannel(channelName, 'Ok what are you working on ?');
-      
-        Slack.postMessageToChannel(channelName, 'What can i do for you.');
+        if (lc.includes('help')) {
+        Slack.postMessageToChannel(channelName, 'What can i assist you with?');
         }
         if (lc.includes('hurt')) {
-        Slack.postMessageToChannel(channelName, 'Do you need a band aid or something ');
+        Slack.postMessageToChannel(channelName, 'Ouch! I would recommend first aid for you.');
+        }
+        if (lc.includes('aching')) {
+        Slack.postMessageToChannel(channelName, 'Try taking pain relievers or medicine');
+        }
+        if (lc.includes('assist')) {
+        Slack.postMessageToChannel(channelName, 'I would be glad to help, what do you need?');
         }
 
         // *********************************************************************
