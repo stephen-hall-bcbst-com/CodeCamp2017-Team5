@@ -12,6 +12,7 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = (response);
        var helper = require('./helpers');
+       var memory = require('./CodeCamp-Memory');
        var WydPhrases = ["I'm knittin' yah a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all mah friends!"];
        var MathPhrases = ["I believe the answer is 35,785.", "2/7 of course!", "Clearly the answer is 3", "-505. I may be old, but I still got it!", "Is it 65 and 3/8?", "11 billion.", "Uh.. is it 670?", "7 hundred thousand!", "I believe the answer is 33 billion!"];
 
@@ -28,7 +29,7 @@ module.exports = {
         } else if (text.includes('animal')) {
                  response = "Favorite animal? Well, mah cats of course! I love mah furry babies more then I love plum puddin'! ";
         } else if (text.includes('drink')) {
-                 response = "I love me a big ol' jug of pink lemonade! Perfect for days lounging under the sun with mah new magenta hat.";
+                 response = "I love me a big ol' jug of pink lemonade! Perfect for days lounging under the sun with mah new magenta hat."; 
         } else if (text.includes('show')) {
                  response = "Dance Moms! Those ladies keep mah young, with their cracka lackin' and their pop hop!";
 // Sends a messsage when asked "How are you?"
@@ -44,12 +45,13 @@ module.exports = {
 // If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
                  response = "Well.. I'm not sure what you mean, honeybun!";
-        }
-        Slack.postMessageToChannel(channelName, response);
+        }   
     }
+} else if (lc.includes('sick')) {
+        response = memory.wasSomeonesick; 
 }
      
-
+Slack.postMessageToChannel(channelName, response);
 
 
 
