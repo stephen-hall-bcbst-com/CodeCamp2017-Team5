@@ -42,7 +42,7 @@ module.exports = {
             // this function helps the child/kid be entertained at home
         } else if (lc.includes('joke') || lc.includes('funny')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
-        }
+        } else if (lc.includes('mom') || lc.includes())
         
         
       
