@@ -29,7 +29,7 @@ module.exports = {
             // this function makes sure the kids are active at home
         } else if (lc.includes('activities') || lc.includes('action') || lc.includes('activity')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(activities));
-            // this function makes sur the child is healthy at home
+            // this function makes sure the child is healthy at home
         } else if (lc.includes('tired') || lc.includes('sleepy') || lc.includes('drowsy')) {
             Slack.postMessageToChannel(channelName, 'take a minute and chill buttercup');
             // this function makes sure the child is okay at home
