@@ -10,7 +10,10 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
            var helper = require('./helpers');
-           var ImBackPhrases = ["I'm back from bingo with the girls!", "Just finished feeding my cats!", "Finally done with knitting you a brand new scarf!"];
+           var memory = require('./CodeCamp-Memory');
+           memory.parent = helper.readDataFromFile('parent name');
+           memory.child = helper.readDataFromFile('child name');
+           var ImBackPhrases = ["what is your parent and child name? please answer seperately"];
            {Slack.postMessageToChannel(channel, helper.phraseAtRandom(ImBackPhrases));
         }
 
