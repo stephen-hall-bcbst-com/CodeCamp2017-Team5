@@ -12,11 +12,17 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = 'well..';
        var helper = require('./helpers');
+<<<<<<< HEAD
        var WydPhrases = ["I'm knittin' you a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all my friends!"];
+=======
+       var WydPhrases = ["I'm knittin' yah a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all mah friends!"];
+       var MathPhrases = ["I believe the answer is 35,785.", "2/7 of course!", "Clearly the answer is 3", "-505. I may be old, but I still got it!", "Is it 65 and 3/8?", "11 billion.", "Uh.. is it 670?", "7 hundred thousand!", "I believe the answer is 33 billion!"];
+>>>>>>> 0059a7328d41438043e713b22ed66563266ffacd
 
-// 
+// Checks if question has to do with Marg's interests
 if (lc.includes('favorite')) {
     checktext(lc);
+// This sends a response based on what interest is being questioned
 
         function checktext(text) {
             if (text.includes('food')) {
@@ -36,28 +42,25 @@ if (lc.includes('favorite')) {
         }
     }
 }
-<<<<<<< HEAD
      
-=======
 
 // Sends a messsage when asked "How are you?"
  if (lc.includes('how are you')) {
     response = "I'm doin' fine!";
  }
->>>>>>> e3333c8425d548053f62a1a61e1208f457f01a79
 
 // Suffles through 3 responses to send when asked "What you doing?"
 if (lc.includes('what') && lc.includes('you') && lc.includes('doing'));
     {Slack.postMessageToChannel(channelName, helper.phraseAtRandom(WydPhrases));
  }
-<<<<<<< HEAD
 
-// 
-if (lc.includes('+') || lc.includes('plus') ||
+/* Recognizes math problems through the use of operation words and supplies wrong answers.
+ * She's an old lady! Her brain has a lil trouble with doing math.*/
+if (lc.includes('+') || lc.includes('plus') || lc.includes('minus') || lc.includes('times') || lc.includes('divided by'));
+    {Slack.postMessageToChannel(channelName, helper.phraseAtRandom(MathPhrases));
+ }
 
-=======
         
->>>>>>> d58271b6ede6a66fe463868b8e1f1ec4481ef4c9
         
         
         // *********************************************************************
