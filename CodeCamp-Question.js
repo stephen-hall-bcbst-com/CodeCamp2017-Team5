@@ -12,7 +12,7 @@ module.exports = {
        var lc = question.toLowerCase();
        var response = 'well..';
        var helper = require('./helpers');
-       var WydPhrases = ["I'm knittin' yah a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all mah friends!"];
+       var WydPhrases = ["I'm knittin' you a sweater!", "I'm readin the Knittin' Catalog!", "Playin a fun game of Bingo with all my friends!"];
 
 // 
 if (lc.includes('favorite')) {
@@ -20,7 +20,7 @@ if (lc.includes('favorite')) {
 
         function checktext(text) {
             if (text.includes('food')) {
-                 response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and mah cats to visit ya!";
+                 response = "mmMMm. I love me some prune puddin'. I'll make ya some when me and my cats to visit ya!";
         }
             if (text.includes('color')) {
                  response = 'Magenta, of course! I bought the cutest magenta sun hat last saturday! Large and covered in frills with a giant feather on top!';
