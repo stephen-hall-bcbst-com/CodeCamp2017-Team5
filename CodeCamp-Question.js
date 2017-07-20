@@ -44,13 +44,10 @@ module.exports = {
                  response = "Raisin Bran! MmMm. Delicous.";
         } else if (lc.includes('fruit') && lc.includes('favorite')) {
                  response = "Prunes! Pruney old prunes.";
-<<<<<<< HEAD
         } else if (lc.includes('emoji') && lc.includes('favorite')) {
                  response = "Emo-ji? What's that? Is that one of them new rock bands? Dreadful music!";
-=======
         } else if (lc.includes('my') && lc.includes('name')) {
                  response = "The parent's name is" + memory.parent + ". The child's name is" + memory.child + ".";
->>>>>>> ec9601598e23e7ae46e801553f06a53bbcb97a99
 // Sends a messsage when asked "How are you?"
         } else if (lc.includes('how are you')) {
                  response = "I'm doin' fine!";                    
