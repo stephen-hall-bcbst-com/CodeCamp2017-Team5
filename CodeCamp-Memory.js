@@ -6,4 +6,5 @@ module.exports = {
     botData: botData,
     wasSomeonesick: 'no',
     parent: '',
+    child: '',
 };
