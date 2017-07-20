@@ -43,7 +43,7 @@ module.exports = {
         } else if (lc.includes('joke') || lc.includes('funny')) {
             Slack.postMessageToChannel(channelName, helper.phraseAtRandom(jokes));
         } else if (lc.includes('mom') || lc.includes('dad')) {
-            response = memory.parent; 
+            memory.parent = message; 
         }
         
         

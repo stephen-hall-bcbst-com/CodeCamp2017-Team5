@@ -16,7 +16,7 @@ module.exports = {
         if (lc.includes('help')) {
         Slack.postMessageToChannel(channelName, 'What can i assist you with?');
         }
-        if (lc.includes('hurt')) {
+        if (lc.includes('hurt') || lc.includes('hurts')) {
         Slack.postMessageToChannel(channelName, 'Ouch! I would recommend first aid for you.');
         }
         if (lc.includes('aching')) {
@@ -25,7 +25,9 @@ module.exports = {
         if (lc.includes('assist')) {
         Slack.postMessageToChannel(channelName, 'I would be glad to help, what do you need?');
         }
-
+        if (lc.includes('pain')) {
+        Slack.postMessageToChannel(channelName, 'How can i help you with that?');
+        }
         // *********************************************************************
         // STOP CODING!
         // *********************************************************************
