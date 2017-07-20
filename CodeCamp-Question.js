@@ -24,6 +24,7 @@ module.exports = {
                           "Uh.. is it 670?", 
                           "7 hundred thousand!", 
                           "I believe the answer is 33 billion!"];
+      var BoringStories = [ ]
 
 // List of responses triggered by words included in questions       
                if (lc.includes('food') && lc.includes('favorite')) {
@@ -52,18 +53,12 @@ module.exports = {
  * She's an old lady! Her brain has a lil trouble with doing math.*/
         } else if (lc.includes('+') || lc.includes('plus') || lc.includes('minus') || lc.includes('times') || lc.includes('divided by')) {
                  response = (helper.phraseAtRandom(MathPhrases));
-// Replies to questions pertaining to Marg's opinions
-        } else if (lc.includes('what') && lc.includes('you') && lc.includes('think') && lc.includes('cats')) {
-                 response = "Cats are heavenly angels on Earth!";
-        } else if (lc.includes('what') && lc.includes('you') && lc.includes('think') && lc.includes('dogs')) {
-                 response = "Dogs! Ugh! Horrible mangy beasts! No where near as cuddly as my beautiful cats";
-        } else if (lc.includes('what') && lc.includes('you') && lc.includes('think') && lc.includes('me')) {
-                 response = "You're really great, honeybun!";
-        } else if (lc.includes('what') && lc.includes('you') && lc.includes('think') && lc.includes('rock and roll')) {
-                 response = "Rock and roll! Ugh! Horrible, horrible music! No one appreciates real music any more!";
-        } else if (lc.includes('what') && lc.includes('you') && lc.includes('think') && lc.includes('')) {
-                 response = "  ";
-        
+// Sends message when question about age
+        } else if (lc.includes('how') && lc.includes('old') && lc.includes('you')) {
+                 response = "Old enough to give you a spankin'!";
+// Sends a story if Marg is asked to tell a story       
+        } else if (lc.includes('tell') && lc.includes('story')) {
+                 response = "Well, once, long ago, in a land far, far away, I was engaged to a handsome rich guy, but I was still sad because I hate handsome rich guys. Like, who even likes handsome rich guys, they are the worst. Always so handsome. And rich. SO stupid! So he gave me one fancy necklace. Liver of the Ocean, I believe it was called. So, while I was off crying because I had to be engaged to a stupid handsome, rich guy, I accidentally slipt on a pina coladoa, and fell off the boat, but I was saved, by a handsome poor guy. Name was Jake, I think? So, I became bffs with Jake and left my stupid rich, handsome, fiance for him, but then, suddenly, a giant, handsome squid came out of the ocean and cut the boat I was on with a giant pair of scissors. Everyone was getting onto the lifeboats and sailing away, but I didn't want to do that because lifeboats are lame, so I grabbed a door and yanked Jake into the water with me. So, we were floating away when Jake started complaining that he was getting hypothermia and drowning and other stupid stuff and he asked me to let him onto the door I was currently surfing to victory, but I told him to suck it and stop being such a crybaby. Yeah, my adventures on the Titanic were great.";     
 // If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
                  response = "Well.. I'm not sure what you mean, honeybun!";          
