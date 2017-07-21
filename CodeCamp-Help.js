@@ -13,25 +13,29 @@ module.exports = {
         // *********************************************************************
         var lc = message.toLowerCase();
             
-        
+// Sends message when someone says they are hurt
         if (lc.includes('hurt') || lc.includes('hurts')) {
-        Slack.postMessageToChannel(channelName, 'Ouch! there should br some band-aids in the cabnit.');
+        Slack.postMessageToChannel(channelName, 'Ouch! If you are in serious pain, try calling your parents number. If you can not, call 911. If you are in dull pain, bandage the wound.');
         }
+// Sends message when someone says they are aching      
         if (lc.includes('aching')) {
-        Slack.postMessageToChannel(channelName, 'Try taking pain relievers or medicine.');
+        Slack.postMessageToChannel(channelName, 'Try relaxing and drinking water. Do not use the aching body part too much.');
         }
+// Sends message when someone says they are having trouble with homework        
         if (lc.includes('homework')) {
-        Slack.postMessageToChannel(channelName, 'Ok what are you doing?');
+        Slack.postMessageToChannel(channelName, 'Try searching it up and reading over the question extensively.');
         }
+// Sends message when someone says they are in pain        
         if (lc.includes('pain')) {
-        Slack.postMessageToChannel(channelName, 'Do you want some pain killers?');
-    }
-    
+        Slack.postMessageToChannel(channelName, 'Do what you would do if you were aching or hurt.');
+        }
+// Sends messgae when someone says they are bored    
         if (lc.includes('boring')) {
-                Slack.postMessageToChannel(channelName, 'Well I am  unable to do what i used to do i cant help you.');
-       
+                Slack.postMessageToChannel(channelName, 'Try saying "Tell me a joke"');
+        }
+// Sends message when someone says they are hungry      
         if (lc.includes('hungry')) {
-                Slack.postMessageToChannel(channelName, 'There should be some food in the kitchen ');
+                Slack.postMessageToChannel(channelName, 'Try asking your parent.');
         }
         // *********************************************************************
         // STOP CODING!
