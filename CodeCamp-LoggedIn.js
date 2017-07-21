@@ -13,7 +13,7 @@ module.exports = {
            var memory = require('./CodeCamp-Memory');
            memory.parent = helper.readDataFromFile('parent name');
            memory.child = helper.readDataFromFile('child name');
-           var ImBackPhrases = ["Hi buttercup! Back fromg bingo! What is your parent and child name? Please answer seperately"];
+           var ImBackPhrases = ["Hi buttercup! Back from bingo! What is your parent and child name? Please answer seperately"];
            {Slack.postMessageToChannel(channel, helper.phraseAtRandom(ImBackPhrases));
         }
 

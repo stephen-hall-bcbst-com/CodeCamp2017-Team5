@@ -49,7 +49,7 @@ module.exports = {
                  response = "The parent's name is" + memory.parent + ". The child's name is" + memory.child + ".";
 // Sends a messsage when asked "How are you?"
         } else if (lc.includes('how are you')) {
-                 response = "I'm doin' fine!";                    
+                 response = 'I am doing fine! Wanna hear about my favorite color? Just ask "What is your favorite color?"';                    
 // Suffles through a list of responses and sends when asked "What are you doing?"     
         } else if (lc.includes('what') && lc.includes('you') && lc.includes('doing')) {
                  response = (helper.phraseAtRandom(WydPhrases));
