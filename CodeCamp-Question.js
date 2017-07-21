@@ -25,7 +25,6 @@ module.exports = {
                           "Uh.. is it 670?", 
                           "7 hundred thousand!", 
                           "I believe the answer is 33 billion!"];
-      var BoringStories = [ ];
 
 // List of responses triggered by words included in questions       
                if (lc.includes('food') && lc.includes('favorite')) {
@@ -70,6 +69,9 @@ module.exports = {
 // Sends a message when Marg is questioned about her birthday     
         } else if (lc.includes('when') && lc.includes('your') && lc.includes('birthday')) {
                  response = "The 3rd of november! You know, it would be quite nice if you sent a card for once.";
+// Sends a message when Marg is questioned about the weather
+        } else if (lc.includes('how') && lc.includes('weather')) {
+                 response = "I don't know. mM mm. Why don't you get off your e-phone and o-pad and go outside to check?";
 // If none apply, sends "Well.. I'm not sure what you mean honeybun!"        
         } else {
                  response = "Well.. I'm not sure what you mean, honeybun!";          
