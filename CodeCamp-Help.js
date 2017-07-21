@@ -12,7 +12,10 @@ module.exports = {
         // CODE HERE!
         // *********************************************************************
         var lc = message.toLowerCase();
-            
+// Sends message when asked for help     
+        if (lc.includes('help')) {
+        Slack.postMessageToChannel(channelName, "What's wrong? Are you hurt, aching, having homework trouble, in pain, bored, or hungry? Response 'Help, I'm -' ");
+        }   
 // Sends message when someone says they are hurt
         if (lc.includes('hurt') || lc.includes('hurts')) {
         Slack.postMessageToChannel(channelName, 'Ouch! If you are in serious pain, try calling your parents number. If you can not, call 911. If you are in dull pain, bandage the wound.');
@@ -30,7 +33,7 @@ module.exports = {
         Slack.postMessageToChannel(channelName, 'Do what you would do if you were aching or hurt.');
         }
 // Sends messgae when someone says they are bored    
-        if (lc.includes('boring')) {
+        if (lc.includes('boring') || lc.includes('bored')) {
                 Slack.postMessageToChannel(channelName, 'Try saying "Tell me a joke"');
         }
 // Sends message when someone says they are hungry      
