@@ -39,7 +39,7 @@ module.exports = {
                 break;
             case 11: Slack.postMessageToChannel(channel, "Im SUPER good at math! Just ask me to subtract,add, multiply, or divide something!");
                 break;
-            case 12: Slack.postMessageToChannel(channel, "Ask me what my favorite -item- is! Sorry, I thought I should remind you that your can do that since you never seem to want to talk to me about what I like.")    
+            case 12: Slack.postMessageToChannel(channel, "Ask me what my favorite -item- is! Sorry, I thought I should remind you that your can do that since you never seem to want to talk to me about what I like.");    
 }
         // Randomly generates a number with a given response. It then post that message from the attached number to the channel.
 
