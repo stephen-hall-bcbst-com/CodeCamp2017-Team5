@@ -16,6 +16,7 @@ module.exports = {
         var helper = require('./helpers');
         var memory = require('./CodeCamp-Memory');
         var activities = ['color a picture', 'jogging', 'read a book', '30 minute rest', 'watch TV', 'play videos games', 'go over homework', 'go over fire escape plan', 'water the garden'];
+             // jokes for entertainment (20)
         var jokes = ['what do you call a container of ducks?... a box of quackers!',
             'what do you get when you cross a snowman and a vampire?... frost bite!',
             'why do seagulls fly over the sea?... because if they flew over a bay they would be called bagels!',
