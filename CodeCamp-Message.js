@@ -22,7 +22,7 @@ module.exports = {
             'why is detective duck so good?... because he always quacks the case!', 'why is the mouse a good ninja?... because he is very squeaky',
             'why are the pizza jokes is bad?... because they are very cheesy', 'why come little lion doesnt have friends?... because he is not cool!',
             'why does mr.lemon act so mean?... because he is not sweet!', 'why cant you play cards cats?... because on could be a cheetah and another could be a lion!',
-            'what do you call a cow with two legs?... lean Meat!', 'what do you call a pig who knows karate?... porkchop', 'what kind of animal needs to wear a wig?... a bald eagle!', 'what do call a fly with no wings?... a walk!', '']; 
+            'what do you call a cow with two legs?... lean Meat!', 'what do you call a pig who knows karate?... porkchop', 'what kind of animal needs to wear a wig?... a bald eagle!', 'what do call a fly with no wings?... a walk!', 'why dont you give Elsa a balloon?... because she wil let it go!']; 
              // this function just simply says bye 
         if (lc.includes("child's") || lc.includes("kid's")) {
             memory.child = helper.getLastWord(message);
