@@ -3,7 +3,7 @@
 module.exports = {
     settings: {
         enabled: true,
-        timeoutInSeconds: 120,
+        timeoutInSeconds: 40,
     },
 
     /**
@@ -23,20 +23,23 @@ module.exports = {
                 break;
             case 3: Slack.postMessageToChannel(channel, 'Im old but my patience is kind of "new", hint hint...!');
                 break;
-            case 4: Slack.postMessageToChannel(channel, 'Where did you go Honey? Still there?');
+            case 4: Slack.postMessageToChannel(channel, "Did you know that I can do math? I'm SOOO good at it!");
                 break; 
             case 5: Slack.postMessageToChannel(channel, 'Are you shy sugar? Say something..');
                 break;
-            case 6: Slack.postMessageToChannel(channel, 'You come here for something??? Huh?');
+            case 6: Slack.postMessageToChannel(channel, 'Wanna hear a story? Just ask "Can you tell me a story?"');
                 break;
             case 7: Slack.postMessageToChannel(channel, 'I wont give you a spanking if you speak to me darling.');
                 break;
-            case 8: Slack.postMessageToChannel(channel, 'You making me old with your silence..whats wrong?');
+            case 8: Slack.postMessageToChannel(channel, 'Wanna hear a joke? Just ask "Tell me a joke"');
                 break;
             case 9: Slack.postMessageToChannel(channel, 'Do you have something in your mouth? Are you not able to talk?');
                 break;
             case 10: Slack.postMessageToChannel(channel, 'Closed mouths do not get fed honey...');
-        }
+                break;
+            case 11: Slack.postMessageToChannel(channel, "Im SUPER good at math! Just ask me to subtract,add, multiply, or divide something!");
+                break;
+}
         // Randomly generates a number with a given response. It then post that message from the attached number to the channel.
 
         // *********************************************************************
