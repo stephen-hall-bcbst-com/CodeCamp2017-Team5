@@ -46,7 +46,7 @@ module.exports = {
         } else if (lc.includes('emoji') && lc.includes('favorite')) {
                  response = "Emo-ji? What's that? Is that one of them new rock bands? Dreadful music!";
         } else if (lc.includes('my') && lc.includes('name')) {
-                 response = "The parent's name is" + memory.parent + ". The child's name is" + memory.child + ".";
+                 response = "The parent's name is" + memory.parent + "." + "The child's name is" + memory.child + ".";
 // Sends a messsage when asked "How are you?"
         } else if (lc.includes('how are you')) {
                  response = 'I am doing fine! Wanna hear about my favorite color? Just ask "What is your favorite color?"';                    
