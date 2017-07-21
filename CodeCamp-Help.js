@@ -28,7 +28,7 @@ module.exports = {
     }
     
         if (lc.includes('boring')) {
-                Slack.postMessageToChannel(channelName, 'Well I am ni able to do what i used to do i cant help you.');
+                Slack.postMessageToChannel(channelName, 'Well I am  unable to do what i used to do i cant help you.');
        
         if (lc.includes('hungry')) {
                 Slack.postMessageToChannel(channelName, 'There should be some food in the kitchen ');
