@@ -11,6 +11,7 @@ module.exports = {
         // *********************************************************************
            var helper = require('./helpers');
            var memory = require('./CodeCamp-Memory');
+           // Takes parent and child name data and places it in Memory
            memory.parent = helper.readDataFromFile('parent name');
            memory.child = helper.readDataFromFile('child name');
            var ImBackPhrases = ["Hi buttercup! Back from bingo! What is your parent and child name? Please answer seperately"];
