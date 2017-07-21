@@ -26,8 +26,7 @@ module.exports = {
              // this function just simply says bye 
         if (lc.includes("child's") || lc.includes("kid's")) {
             memory.child = helper.getLastWord(message);
-            helper.writeDataToFile('child name', memory.child);
-           
+            helper.writeDataToFile('child name', memory.child);  
         } else if (lc.includes('bye') || lc.includes('goodbye')) {
             Slack.postMessageToChannel(channelName, 'Take care see you later honey');
             // this function makes sure the child is not hungry at home 
